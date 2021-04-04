@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .red{
+           color: red; 
+           
+        }
+        /* 下面使用的是交集选择器 个人理解and  同时满足元素为p class=red*/
+        p.red{
+            font-size: 20px; 
+        }
+        /* 下面使用的是并集选择器 个人理解or 满足元素为p 或者元素为div 都可以*/
+        p,div{
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">hello this is my first macbookpro</p>
+    <p class="red">testing live server</p>
+    <div class="red">this is div</p>
+</body>
+</html>

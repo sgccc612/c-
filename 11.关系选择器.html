@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div>p>span{
+            color: red;
+        }
+        /* ⬆子元素选择器 */
+        div p{
+            font-size: 28px;
+        }
+        /* ⬆后代元素选择器 */
+        p.red + p{
+            font-size: 44px;
+        }
+        /* ⬆兄弟元素选择器 */
+    </style>
+</head>
+<body>
+    <div>
+        <p class="red">
+            <span>我是p元素的子元素</span>
+            <br>
+            <span>testing</span>
+        </p>    
+        <p><span>testing1</span></p>
+    </div>
+    
+</body>
+</html>
